@@ -8,6 +8,20 @@ pipeline {
         }
 
     stages {
+            stage('terraform init') {
+                    steps {
+                            script {
+                                    sh "terraform init"
+                            }
+                    }
+            }
+            stage('terraform apply') {
+                    steps {
+                            script {
+                                    sh "terraform apply"
+                            }
+                    }
+            }
             stage('Build Docker Image') {
                     steps {
                             script {
