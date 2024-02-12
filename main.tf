@@ -1,8 +1,8 @@
 # main.tf
 
 resource "google_container_cluster" "my_cluster" {
-  name     = "cluster-1"
-  location = "us-central1"
+  name     = "cluster-2"
+  location = "us-west1"
 
   initial_node_count = 1
   network = "default"
